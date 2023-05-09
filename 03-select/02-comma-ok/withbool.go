@@ -8,10 +8,10 @@ func main1() {
 	quit := make(chan bool)
 
 	//send value
-	go send(eve, odd, quit)
+	go send1(eve, odd, quit)
 
 	//receive
-	receive(eve, odd, quit)
+	receive1(eve, odd, quit)
 
 	fmt.Println("about to close")
 
